@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grão & Prosa | Cafeteria Especial</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex flex-column align-items-center" href="#">
+                <span class="logo-title">GRÃO & PROSA</span>
+                <span class="logo-subtitle">CAFETERIA ESPECIAL</span>
+            </a>
+
+            <!-- Menu Hambúrguer -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cardapio.html">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Nossa história</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero py-5">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <hr class="hero-line m-0">
+                        <span class="subtitle-text">CAFÉ • SABOR • CONEXÕES</span>
+                    </div>
+                    <h1 class="display-3 serif-font mb-4">Café de verdade.<br>Momentos que ficam.</h1>
+                    <p class="lead mb-5 text-muted">
+                        Cafés especiais, receitas autorais e pequenos<br>prazeres feitos com cuidado.
+                    </p>
+                    <a href="#cardapio" class="btn btn-primary rounded-pill px-4 py-3 btn-green text-uppercase fw-semibold">
+                        EXPLORAR CARDÁPIO <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80" alt="Xícara de café e croissant" class="img-fluid rounded-4 shadow-sm hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section id="cardapio" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 bg-transparent h-100">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Cafés especiais" class="card-img-top rounded-3 mb-3">
+                        <div class="card-body p-0">
+                            <i class="bi bi-brightness-alt-high text-green fs-4 mb-2 d-block"></i>
+                            <h3 class="serif-font h4">Cafés especiais</h3>
+                            <p class="text-muted">Grãos selecionados, torra artesanal e sabores únicos.</p>
+                            <a href="cafe.html" class="card-link text-dark text-decoration-none text-uppercase fw-semibold fs-7">SAIBA MAIS <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 bg-transparent h-100">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Doces da casa" class="card-img-top rounded-3 mb-3">
+                        <div class="card-body p-0">
+                            <i class="bi bi-cake2 text-green fs-4 mb-2 d-block"></i>
+                            <h3 class="serif-font h4">Doces da casa</h3>
+                            <p class="text-muted">Receitas artesanais que combinam com o seu café.</p>
+                            <a href="doces.html" class="card-link text-dark text-decoration-none text-uppercase fw-semibold fs-7">SAIBA MAIS <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0 bg-transparent h-100">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80" alt="Pausas salgadas" class="card-img-top rounded-3 mb-3">
+                        <div class="card-body p-0">
+                            <i class="bi bi-cup-hot text-green fs-4 mb-2 d-block"></i>
+                            <h3 class="serif-font h4">Pausas salgadas</h3>
+                            <p class="text-muted">Sabor e equilíbrio para o seu dia.</p>
+                            <a href="salgados.html" class="card-link text-dark text-decoration-none text-uppercase fw-semibold fs-7">SAIBA MAIS <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section id="historia" class="py-5 mb-5">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80" alt="Barista preparando café" class="img-fluid rounded-4 shadow-sm about-img">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <hr class="hero-line m-0">
+                        <span class="subtitle-text">MAIS QUE UMA CAFETERIA</span>
+                    </div>
+                    <h2 class="display-5 serif-font mb-4">Um espaço para<br>o que realmente importa.</h2>
+                    <p class="text-muted mb-5">
+                        Somos apaixonados por café e por pessoas. Aqui, cada xícara é preparada com atenção, cada detalhe é pensado para transformar o simples ato de tomar um café em uma experiência especial.
+                    </p>
+                    
+                    <div class="row g-3 mb-5 text-muted small">
+                        <div class="col-sm-4 d-flex gap-2">
+                            <i class="bi bi-flower1 fs-5 text-dark"></i>
+                            <span>Cafés especiais<br>e de origem</span>
+                        </div>
+                        <div class="col-sm-4 d-flex gap-2 border-start">
+                            <i class="bi bi-heart fs-5 text-dark"></i>
+                            <span>Ambiente acolhedor<br>e autêntico</span>
+                        </div>
+                        <div class="col-sm-4 d-flex gap-2 border-start">
+                            <i class="bi bi-people fs-5 text-dark"></i>
+                            <span>Conexões reais<br>e boas conversas</span>
+                        </div>
+                    </div>
+
+                    <a href="historia.html" class="btn btn-outline-dark rounded-pill px-4 py-2 text-uppercase fw-semibold btn-outline-custom">
+                        CONHEÇA NOSSA HISTÓRIA <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- FOOTER -->
+    <footer class="py-5 border-top border-secondary-subtle">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <!-- Logo Footer -->
+                <div class="col-md-4 text-center text-md-start">
+                    <a class="navbar-brand d-inline-flex flex-column align-items-center text-decoration-none" href="#">
+                        <span class="logo-title" style="font-size: 1.2rem;">GRÃO & PROSA</span>
+                        <span class="logo-subtitle" style="font-size: 0.45rem;">CAFETERIA ESPECIAL</span>
+                    </a>
+                </div>
+                <!-- Redes Sociais -->
+                <div class="col-md-4 text-center">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <!-- Slogan Footer -->
+                <div class="col-md-4 text-center text-md-end">
+                    <span class="text-muted-custom small">Café • Sabor • Conexões</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle com Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

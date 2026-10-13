@@ -1,0 +1,164 @@
+/* Variáveis de Cores Baseadas no Layout */
+:root {
+    --bg-color: #f6f3eb; /* Bege claro de fundo */
+    --text-dark: #3a2e26; /* Marrom/Preto dos textos */
+    --accent-green: #3b4929; /* Verde escuro */
+    --accent-green-hover: #2d381f;
+    --text-muted: #6e645c; /* Cor para parágrafos */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Tipografia */
+.serif-font {
+    font-family: 'DM Serif Display', serif;
+    color: var(--text-dark);
+}
+
+.text-green {
+    color: var(--accent-green);
+}
+
+.bg-green {
+    background-color: var(--accent-green);
+}
+
+.text-muted-custom {
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.subtitle-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+}
+
+/* Navbar */
+.logo-icon {
+    color: var(--accent-green);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+.logo-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--text-dark);
+}
+.logo-subtitle {
+    font-size: 0.55rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--text-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: var(--accent-green);
+}
+
+.btn-nav {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-color: var(--text-dark);
+    color: var(--text-dark);
+}
+.btn-nav:hover {
+    background-color: var(--text-dark);
+    color: var(--bg-color);
+}
+
+/* Hero Section e Botões */
+.hero-line {
+    width: 30px;
+    border-top: 2px solid var(--accent-green);
+    opacity: 1;
+}
+
+.btn-green {
+    background-color: var(--accent-green);
+    border-color: var(--accent-green);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+.btn-green:hover {
+    background-color: var(--accent-green-hover);
+    border-color: var(--accent-green-hover);
+}
+
+/* Imagens */
+.hero-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.story-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Seção de Valores (Features) */
+.border-secondary-subtle {
+    border-color: rgba(110, 100, 92, 0.2) !important;
+}
+
+/* Citação */
+.quote-section {
+    min-height: 400px;
+}
+.quote-section h3 {
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .navbar-nav .nav-link.active::after {
+        left: 0;
+        transform: none;
+    }
+    .hero-img, .story-img {
+        height: 400px;
+    }
+    .border-md-start, .border-md-end {
+        border-left: none !important;
+        border-right: none !important;
+    }
+    .quote-section {
+        flex-direction: column;
+    }
+}
+@media (min-width: 768px) {
+    .border-md-start { border-left: 1px solid rgba(110, 100, 92, 0.2) !important; }
+    .border-md-end { border-right: 1px solid rgba(110, 100, 92, 0.2) !important; }
+}

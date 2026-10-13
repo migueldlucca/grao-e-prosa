@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts (Lora para títulos, Inter para texto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/style8.css">
+</head>
+<body>
+
+    <!-- Navbar com Menu Hambúrguer -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-brown">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Header -->
+    <header class="header-banner text-white position-relative overflow-hidden">
+        <div class="container position-relative z-1">
+            <h1 class="display-4 fw-bold lora-font mb-3">Finalizar pedido</h1>
+            <p class="mb-0">Revise os itens, escolha a entrega e conclua sua compra.</p>
+            <p class="mb-0 text-light-brown">Tudo preparado com carinho, do nosso café até você.</p>
+        </div>
+        <!-- Elementos decorativos (círculos baseados no rascunho) -->
+        <div class="circle-decor circle-1"></div>
+        <div class="circle-decor circle-2"></div>
+        <div class="circle-decor circle-3"></div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <!-- Coluna Esquerda: Formulários -->
+            <div class="col-lg-7">
+                
+                <!-- 1. Seus dados -->
+                <section class="form-section mb-5">
+                    <h2 class="h3 lora-font mb-4 text-dark-brown">1. Seus dados</h2>
+                    <div class="mb-3">
+                        <label class="form-label">Nome completo *</label>
+                        <input type="text" class="form-control custom-input" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Telefone / WhatsApp *</label>
+                            <input type="text" class="form-control custom-input" placeholder="(00) 00000-0000" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">E-mail (opcional)</label>
+                            <input type="email" class="form-control custom-input" placeholder="seuemail@exemplo.com">
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="custom-hr">
+
+                <!-- 2. Endereço de entrega -->
+                <section class="form-section mb-5 mt-4">
+                    <h2 class="h3 lora-font mb-4 text-dark-brown">2. Endereço de entrega</h2>
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-4">
+                            <label class="form-label">CEP *</label>
+                            <input type="text" class="form-control custom-input" placeholder="00000-000" required>
+                        </div>
+                        <div class="col-md-8">
+                            <label class="form-label">Endereço *</label>
+                            <input type="text" class="form-control custom-input" placeholder="Rua, avenida, etc." required>
+                        </div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-3">
+                            <label class="form-label">Número *</label>
+                            <input type="text" class="form-control custom-input" placeholder="Nº" required>
+                        </div>
+                        <div class="col-md-5">
+                            <label class="form-label">Complemento</label>
+                            <input type="text" class="form-control custom-input" placeholder="Apto, bloco, etc.">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Bairro *</label>
+                            <input type="text" class="form-control custom-input" placeholder="Bairro" required>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="custom-hr">
+
+                <!-- 3. Forma de entrega -->
+                <section class="form-section mb-5 mt-4">
+                    <h2 class="h3 lora-font mb-4 text-dark-brown">3. Forma de entrega</h2>
+                    <div class="delivery-options">
+                        <label class="delivery-card active">
+                            <input type="radio" name="deliveryMethod" value="delivery" checked>
+                            <div class="card-content d-flex justify-content-between align-items-center w-100">
+                                <div>
+                                    <h5 class="mb-1 fw-bold text-dark-brown">Delivery</h5>
+                                    <p class="mb-0 text-muted small">Receba no conforto da sua casa.</p>
+                                </div>
+                                <div class="radio-indicator"></div>
+                            </div>
+                        </label>
+                        <label class="delivery-card mt-3">
+                            <input type="radio" name="deliveryMethod" value="pickup">
+                            <div class="card-content d-flex justify-content-between align-items-center w-100">
+                                <div>
+                                    <h5 class="mb-1 text-dark-brown">Retirada no local</h5>
+                                    <p class="mb-0 text-muted small">Retire seu pedido diretamente na loja.</p>
+                                </div>
+                                <div class="radio-indicator"></div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+
+                <hr class="custom-hr">
+
+                <!-- 4. Forma de pagamento -->
+                <section class="form-section mb-4 mt-4">
+                    <h2 class="h3 lora-font mb-4 text-dark-brown">4. Forma de pagamento</h2>
+                    <div class="row g-2">
+                        <div class="col-6 col-md-3">
+                            <label class="payment-card text-center p-3">
+                                <input type="radio" name="paymentMethod" value="pix" checked>
+                                <div class="radio-indicator mx-auto mb-2"></div>
+                                <span class="d-block small fw-medium">Pix</span>
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <label class="payment-card text-center p-3">
+                                <input type="radio" name="paymentMethod" value="credit">
+                                <div class="radio-indicator mx-auto mb-2"></div>
+                                <span class="d-block small fw-medium">Cartão de crédito</span>
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <label class="payment-card text-center p-3">
+                                <input type="radio" name="paymentMethod" value="debit">
+                                <div class="radio-indicator mx-auto mb-2"></div>
+                                <span class="d-block small fw-medium">Cartão de débito</span>
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <label class="payment-card text-center p-3">
+                                <input type="radio" name="paymentMethod" value="cash">
+                                <div class="radio-indicator mx-auto mb-2"></div>
+                                <span class="d-block small fw-medium">Dinheiro</span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Observações -->
+                <div class="mb-4">
+                    <label class="form-label">Observações (opcional)</label>
+                    <textarea class="form-control custom-input" rows="3" placeholder="Alguma observação especial? Ex.: sem cebola, bem passado..."></textarea>
+                </div>
+
+                <!-- Info Segura -->
+                <div class="info-box p-4 rounded-3 bg-light-green mb-4">
+                    <h5 class="fw-bold text-dark-brown">Compra simples e segura</h5>
+                    <p class="small text-muted mb-2">Confira seu pedido ao lado. Você poderá revisar os itens e escolher a forma de recebimento antes de finalizar.</p>
+                    <p class="small fw-bold text-dark-brown mb-0">Feito com carinho para deixar seu dia mais gostoso.</p>
+                </div>
+
+            </div>
+
+            <!-- Coluna Direita: Resumo do Pedido -->
+            <div class="col-lg-5">
+                <div class="order-summary-card p-4 rounded-4 bg-white shadow-sm sticky-top" style="top: 20px;">
+                    <h2 class="h3 lora-font text-dark-brown">Seu pedido</h2>
+                    <p class="text-muted small mb-4">Todos os produtos • lista vertical</p>
+                    
+                    <!-- Lista com scroll (Carrossel Vertical) -->
+                    <div class="product-list-container mb-4">
+                        
+                        <!-- ================= CATEGORIA: CAFÉS ESPECIAIS ================= -->
+                        <div class="category-title">CAFÉS ESPECIAIS</div>
+                        
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Espresso</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 8,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(8.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Café Americano</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 10,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(10.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Cappuccino</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 14,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(14.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Latte</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 16,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(16.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Café Gelado</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 12,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(12.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Café em Grãos</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 42,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(42.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Mocha</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 18,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(18.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Affogato</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 16,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(16.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Cold Brew</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 14,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(14.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- ================= CATEGORIA: DOCES DA CASA ================= -->
+                        <div class="category-title mt-3">DOCES DA CASA</div>
+                        
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Brownie</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 12,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(12.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Bolo de Chocolate</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 14,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(14.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Bolo de Cenoura</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 14,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(14.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Torta de Limão</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 16,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(16.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Bolo de Chocolate com Brigadeiro</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 16,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(16.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Cookie</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 8,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(8.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Doces Artesanais</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 6,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(6.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Cheesecake de Frutas Vermelhas</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 18,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(18.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Muffin</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 10,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(10.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Alfajor</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 8,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(8.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Palha Italiana</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 10,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(10.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Petit Gâteau</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 18,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(18.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- ================= CATEGORIA: PAUSAS SALGADAS ================= -->
+                        <div class="category-title mt-3">PAUSAS SALGADAS</div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Empada</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 8,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(22.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Sanduíche de Frango</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 18,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(18.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Sanduíche de Roast Beef</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 20,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(20.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Misto Quente</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 16,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(16.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Croissant Salgado</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 10,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(16.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Cigarrete</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 8,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(8.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Biscoito Frito</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 8,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(8.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Pastel</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 8,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(14.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Enroladinho de Salsicha</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 8,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(32.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Wrap de Frango</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 15,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(18.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Pão de Queijo</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 8,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(16.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="mock-img"></div><span>Panquecas</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="fw-bold small">R$ 16,00</span>
+                                <button class="btn btn-add rounded-circle p-0" onclick="adicionarItem(16.00)"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <p class="text-center text-muted small mb-3">Role para ver todos os itens</p>
+                    <hr>
+
+                    <!-- Totais -->
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted">Subtotal</span>
+                        <span id="subtotalValue" class="text-muted">R$ 0,00</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-4">
+                        <span class="text-muted">Entrega</span>
+                        <span class="text-muted">A definir</span>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold lora-font m-0 text-dark-brown">Total</h4>
+                        <h4 class="fw-bold m-0 text-dark-brown" id="totalValue">R$ 0,00</h4>
+                    </div>
+
+                    <button class="btn btn-dark-green w-100 py-3 rounded-pill fw-bold text-white mb-2">
+                        FINALIZAR PEDIDO <i class="bi bi-arrow-right ms-2"></i>
+                    </button>
+                    <p class="text-center text-muted" style="font-size: 0.75rem;">O total será atualizado conforme as quantidades.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+       <!-- FOOTER -->
+    <footer class="py-5 border-top border-secondary-subtle">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <!-- Logo Footer -->
+                <div class="col-md-4 text-center text-md-start">
+                    <a class="navbar-brand d-inline-flex flex-column align-items-center text-decoration-none" href="#">
+                        <span class="logo-title" style="font-size: 1.2rem;">GRÃO & PROSA</span>
+                        <span class="logo-subtitle" style="font-size: 0.45rem;">CAFETERIA ESPECIAL</span>
+                    </a>
+                </div>
+                <!-- Redes Sociais -->
+                <div class="col-md-4 text-center">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <!-- Slogan Footer -->
+                <div class="col-md-4 text-center text-md-end">
+                    <span class="text-muted-custom small">Café • Sabor • Conexões</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS com Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script8.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+/* Variáveis de Cores Baseadas no Layout */
+:root {
+    --bg-color: #f6f3eb; /* Bege claro de fundo */
+    --text-dark: #3a2e26; /* Marrom/Preto dos textos */
+    --accent-green: #3b4929; /* Verde escuro (Botões, ícones) */
+    --accent-green-hover: #2d381f;
+    --text-muted: #6e645c; /* Cor para parágrafos */
+    --border-color: rgba(110, 100, 92, 0.2);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Tipografia */
+.serif-font {
+    font-family: 'DM Serif Display', serif;
+    color: var(--text-dark);
+}
+
+.text-green {
+    color: var(--accent-green);
+}
+
+.text-muted-custom {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.subtitle-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+}
+
+/* Navbar */
+.logo-icon {
+    color: var(--accent-green);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+.logo-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--text-dark);
+}
+.logo-subtitle {
+    font-size: 0.55rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--text-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: var(--accent-green);
+}
+
+.btn-nav {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-color: var(--text-dark);
+    color: var(--text-dark);
+}
+.btn-nav:hover {
+    background-color: var(--text-dark);
+    color: var(--bg-color);
+}
+
+/* Hero Section e Botões */
+.hero-line {
+    width: 30px;
+    border-top: 2px solid var(--accent-green);
+    opacity: 1;
+}
+
+.btn-green {
+    background-color: var(--accent-green);
+    border-color: var(--accent-green);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+.btn-green:hover {
+    background-color: var(--accent-green-hover);
+    border-color: var(--accent-green-hover);
+}
+
+.hero-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Mapa Fake e Tooltip */
+.map-wrapper {
+    background-color: #e5e0d8;
+}
+.drop-shadow {
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.3));
+}
+.custom-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px 6px 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    display: block;
+    width: 0;
+}
+
+/* Formulário de Contato */
+.contact-form-wrapper {
+    background-color: transparent;
+    border-color: var(--border-color) !important;
+}
+
+.custom-input {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid var(--border-color);
+    color: var(--text-dark);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+}
+
+.custom-input:focus {
+    background-color: #fff;
+    border-color: var(--accent-green);
+    box-shadow: 0 0 0 0.25rem rgba(59, 73, 41, 0.25);
+}
+
+.custom-input::placeholder {
+    color: #9d948c;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.hover-green:hover {
+    color: var(--accent-green) !important;
+    transition: 0.3s;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .navbar-nav .nav-link.active::after {
+        left: 0;
+        transform: none;
+    }
+    .hero-img {
+        height: 350px;
+    }
+    .map-wrapper img {
+        min-height: 300px !important;
+    }
+}

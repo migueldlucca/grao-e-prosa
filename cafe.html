@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Cafés Especiais Artesanais</title>
+    <!-- Importando Bootstrap 5 para responsividade e grid[cite: 3] -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones do FontAwesome para a seção de características -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Arquivo de estilo customizado -->
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+
+   <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex flex-column align-items-center" href="#">
+                <i class="bi bi-flower1 logo-icon"></i>
+                <span class="logo-title">GRÃO & PROSA</span>
+                <span class="logo-subtitle">CAFETERIA ESPECIAL</span>
+            </a>
+
+            <!-- Menu Hambúrguer -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cardapio.html">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Nossa história</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Conteúdo Principal -->
+    <main class="container-fluid px-0">
+        <!-- Imagem de Destaque (Hero)[cite: 3] -->
+        <div class="hero-section mb-5">
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=1600&q=80" alt="Grãos de café e porta-filtro" class="img-fluid w-100 hero-img object-fit-cover">
+        </div>
+
+        <div class="container pb-5">
+            <!-- Seção de Apresentação e Diferenciais[cite: 3] -->
+            <div id="sobre" class="row mb-5 align-items-center">
+                <!-- Coluna Esquerda: Textos Principais -->
+                <div class="col-lg-7 pe-lg-5 mb-4 mb-lg-0">
+                    <div class="icon-cafe mb-3 fs-3">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <h1 class="titulo-principal">Cafés especiais</h1>
+                    <h3 class="subtitulo mb-4">Uma experiência única em cada xícara.</h3>
+                    <p class="texto-descritivo mb-4">
+                        Descubra o verdadeiro sabor do café com grãos selecionados, torra artesanal e aromas que transformam cada pausa em um momento especial. Trabalhamos com cafés cuidadosamente escolhidos para proporcionar uma experiência diferenciada, valorizando a qualidade dos grãos, a intensidade dos sabores e o equilíbrio de cada preparo.
+                    </p>
+                    <p class="assinatura">Seu próximo café favorito pode estar aqui!</p>
+                </div>
+                
+                <!-- Coluna Direita: Lista de Diferenciais -->
+                <div class="col-lg-5 ps-lg-5 border-start-lg border-2 border-secondary-subtle">
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-4 features-list">
+                        <li class="d-flex align-items-start">
+                            <i class="fa-solid fa-seedling fs-4 me-3 mt-1 text-dark-brown"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Grãos selecionados</h6>
+                                <p class="text-muted small mb-0">Qualidade e sabor em cada preparo.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="fa-solid fa-fire-flame-curved fs-4 me-3 mt-1 text-dark-brown"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Torra artesanal</h6>
+                                <p class="text-muted small mb-0">Aromas marcantes e características preservadas.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="fa-solid fa-cup-togo fs-4 me-3 mt-1 text-dark-brown"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Sabores únicos</h6>
+                                <p class="text-muted small mb-0">Opções para diferentes gostos e preferências.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="fa-solid fa-blender fs-4 me-3 mt-1 text-dark-brown"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Preparos especiais</h6>
+                                <p class="text-muted small mb-0">Cafés pensados para tornar seu dia ainda melhor.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Seção: Nossos Cafés (Grid de Produtos)[cite: 3] -->
+            <div id="produtos" class="row">
+                <div class="col-12 mb-4 d-flex align-items-center">
+                    <h6 class="titulo-secao mb-0 me-3">NOSSOS CAFÉS</h6>
+                    <hr class="flex-grow-1 linha-divisoria">
+                </div>
+
+                <!-- Lista de Produtos usando Grid do Bootstrap (3 colunas no desktop, 1 no mobile) -->
+                <div class="row g-4">
+                    
+                    <!-- Produto 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-cafe">
+                            <img src="img/expresso.webp" alt="Espresso" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Espresso</h5>
+                            <p class="desc-produto text-muted mb-2">Intenso e encorpado.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 8,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-cafe">
+                            <img src="img/cafe americano.jpg" alt="Café Americano" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Café Americano</h5>
+                            <p class="desc-produto text-muted mb-2">Suave e equilibrado.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 10,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-cafe">
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=500&q=80" alt="Cappuccino" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Cappuccino</h5>
+                            <p class="desc-produto text-muted mb-2">Cremoso e aromático.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 14,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-cafe">
+                            <img src="img/latte.jpg" alt="Latte" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Latte</h5>
+                            <p class="desc-produto text-muted mb-2">Leite vaporizado e sabor suave.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 16,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-cafe">
+                            <img src="img/cafe gelado.jpg" alt="Café Gelado" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Café Gelado</h5>
+                            <p class="desc-produto text-muted mb-2">Refrescante e saboroso.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 12,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-cafe">
+                            <img src="img/cafeemgraos.jpg" alt="Café em Grãos" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Café em Grãos</h5>
+                            <p class="desc-produto text-muted mb-2">Diversos perfis de sabor.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 42,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 7 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-cafe">
+                            <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=500&q=80" alt="Mocha" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Mocha</h5>
+                            <p class="desc-produto text-muted mb-2">Café, chocolate e leite.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 18,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 8 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-cafe">
+                            <img src="img/affogato.jpg" alt="Affogato" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Affogato</h5>
+                            <p class="desc-produto text-muted mb-2">Sorvete e espresso.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 16,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 9 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-cafe">
+                            <img src="img/cold brew.jpg" alt="Cold Brew" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Cold Brew</h5>
+                            <p class="desc-produto text-muted mb-2">Suave e refrescante.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 14,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                  <!-- Botão de Ação CTA Footer[cite: 4] -->
+                <div class="col-12 text-center mt-5 position-relative footer-cta-section pb-5">
+                    <button>
+                        <a class="nav-link active" href="compras.html">PEÇA SEU CAFÉ FAVORITO</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+       <!-- FOOTER -->
+    <footer class="py-5 border-top border-secondary-subtle">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <!-- Logo Footer -->
+                <div class="col-md-4 text-center text-md-start">
+                    <a class="navbar-brand d-inline-flex flex-column align-items-center text-decoration-none" href="#">
+                        <span class="logo-title" style="font-size: 1.2rem;">GRÃO & PROSA</span>
+                        <span class="logo-subtitle" style="font-size: 0.45rem;">CAFETERIA ESPECIAL</span>
+                    </a>
+                </div>
+                <!-- Redes Sociais -->
+                <div class="col-md-4 text-center">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <!-- Slogan Footer -->
+                <div class="col-md-4 text-center text-md-end">
+                    <span class="text-muted-custom small">Café • Sabor • Conexões</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script5.js"></script>
+</body>
+</html>

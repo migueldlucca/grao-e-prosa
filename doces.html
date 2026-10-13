@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Doces Artesanais</title>
+    <!-- Importando Bootstrap 5 para responsividade e menu sanduíche -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome para os ícones da seção de características e botões -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Importando o CSS customizado -->
+    <link rel="stylesheet" href="css/style6.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex flex-column align-items-center" href="#">
+                <i class="bi bi-flower1 logo-icon"></i>
+                <span class="logo-title">GRÃO & PROSA</span>
+                <span class="logo-subtitle">CAFETERIA ESPECIAL</span>
+            </a>
+
+            <!-- Menu Hambúrguer -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cardapio.html">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Nossa história</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container-fluid px-0">
+        <!-- Imagem de Destaque (Hero) no topo[cite: 4] -->
+        <div class="hero-section mb-5">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1600&q=80"
+                alt="Bolo de chocolate, brownies e cookies" class="img-fluid w-100 hero-img object-fit-cover">
+        </div>
+
+        <div class="container pb-5">
+            <!-- Seção de Apresentação e Diferenciais[cite: 4] -->
+            <div id="sobre" class="row mb-5 align-items-center">
+                <!-- Coluna Esquerda: Textos Principais -->
+                <div class="col-lg-7 pe-lg-5 mb-4 mb-lg-0">
+                    <div class="icon-doce mb-3 fs-3">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <h1 class="titulo-principal">Doces da casa</h1>
+                    <h3 class="subtitulo mb-4">Feitos com carinho, preparados para encantar.</h3>
+                    <p class="texto-descritivo mb-4">
+                        Nada combina melhor com um bom café do que um doce especial. Nossa seleção de doces da casa
+                        reúne receitas artesanais, ingredientes de qualidade e aquele sabor que transforma pequenos
+                        momentos em boas lembranças. Cada opção é pensada para oferecer uma experiência deliciosa, seja
+                        para acompanhar sua bebida favorita ou para matar a vontade de um docinho ao longo do dia.
+                    </p>
+                    <p class="assinatura">Permita-se uma pausa mais doce!</p>
+                </div>
+
+                <!-- Coluna Direita: Lista de Diferenciais com Ícones[cite: 4] -->
+                <div class="col-lg-5 ps-lg-5 border-start-lg border-2 border-secondary-subtle">
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-4 features-list">
+                        <li class="d-flex align-items-start">
+                            <i class="fa-solid fa-cookie-bite fs-4 me-3 mt-1 text-dark-brown"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Bolos artesanais</h6>
+                                <p class="text-muted small mb-0">Macios, saborosos e perfeitos para acompanhar um café.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="fa-solid fa-compact-disc fs-4 me-3 mt-1 text-dark-brown"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Doces especiais</h6>
+                                <p class="text-muted small mb-0">Opções irresistíveis para quem aprecia bons sabores.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="fa-regular fa-heart fs-4 me-3 mt-1 text-dark-brown"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Receitas da casa</h6>
+                                <p class="text-muted small mb-0">Combinações preparadas com cuidado e dedicação.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="fa-solid fa-mug-saucer fs-4 me-3 mt-1 text-dark-brown"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Acompanhamentos perfeitos</h6>
+                                <p class="text-muted small mb-0">Doces que harmonizam com diferentes tipos de café.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Seção: Nossos Doces (Grid de 4 colunas)[cite: 4] -->
+            <div id="doces" class="row">
+                <div class="col-12 mb-4 d-flex align-items-center">
+                    <h6 class="titulo-secao mb-0 me-3">NOSSOS DOCES</h6>
+                    <hr class="flex-grow-1 linha-divisoria">
+                </div>
+
+                <!-- Lista de Produtos: 1 coluna no celular, 2 no tablet, 4 no desktop -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                    <!-- Produto 1 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="img/brownie.jpg" alt="Brownie" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Brownie</h5>
+                            <p class="desc-produto text-muted mb-2">Chocolate de verdade.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 12,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 2 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=500&q=80"
+                                alt="Bolo de Chocolate" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Bolo de Chocolate</h5>
+                            <p class="desc-produto text-muted mb-2">Macio e irresistível.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 14,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 3 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="img/bolo de cenoura.jpg" alt="Bolo de Cenoura"
+                                class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Bolo de Cenoura</h5>
+                            <p class="desc-produto text-muted mb-2">Com cobertura de chocolate.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 14,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 4 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=500&q=80"
+                                alt="Torta de Limão" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Torta de Limão</h5>
+                            <p class="desc-produto text-muted mb-2">Refrescante e cremosa.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 16,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 5 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80"
+                                alt="Bolo de Chocolate com Brigadeiro" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Bolo de Chocolate com<br>Brigadeiro</h5>
+                            <p class="desc-produto text-muted mb-2">Recheio cremoso.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 16,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 6 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="img/cookies.jpg" alt="Cookie" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Cookie</h5>
+                            <p class="desc-produto text-muted mb-2">Crocante por fora, macio por dentro.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 8,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 7 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="https://images.unsplash.com/photo-1540337706094-da10342c93d8?w=500&q=80"
+                                alt="Doces Artesanais" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Doces Artesanais</h5>
+                            <p class="desc-produto text-muted mb-2">Brigadeiro, cajuzinho e mais.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 6,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 8 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500&q=80"
+                                alt="Cheesecake" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Cheesecake de Frutas<br>Vermelhas</h5>
+                            <p class="desc-produto text-muted mb-2">Cremoso e equilibrado.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 18,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 9 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=500&q=80"
+                                alt="Muffin" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Muffin</h5>
+                            <p class="desc-produto text-muted mb-2">Diversos sabores.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 10,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 10 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="img/alfajor.jpg" alt="Alfajor" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Alfajor</h5>
+                            <p class="desc-produto text-muted mb-2">Tradição e muito sabor.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 8,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 11 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="img/palha.jpg" alt="Palha Italiana" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Palha Italiana</h5>
+                            <p class="desc-produto text-muted mb-2">Cremosa e irresistível.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 10,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 12 -->
+                    <div class="col">
+                        <div class="card-doce">
+                            <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=500&q=80"
+                                alt="Petit Gâteau" class="w-100 rounded-3 mb-3 img-produto">
+                            <h5 class="nome-produto">Petit Gâteau</h5>
+                            <p class="desc-produto text-muted mb-2">Com sorvete.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="preco-produto">R$ 18,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Botão de Ação CTA Footer[cite: 4] -->
+                <div class="col-12 text-center mt-5 position-relative footer-cta-section pb-5">
+                    <button>
+                        <a class="nav-link active" href="compras.html">EXPERIMENTE NOSSAS DELÍCIAS</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-5 border-top border-secondary-subtle">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <!-- Logo Footer -->
+                <div class="col-md-4 text-center text-md-start">
+                    <a class="navbar-brand d-inline-flex flex-column align-items-center text-decoration-none" href="#">
+                        <span class="logo-title" style="font-size: 1.2rem;">GRÃO & PROSA</span>
+                        <span class="logo-subtitle" style="font-size: 0.45rem;">CAFETERIA ESPECIAL</span>
+                    </a>
+                </div>
+                <!-- Redes Sociais -->
+                <div class="col-md-4 text-center">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <!-- Slogan Footer -->
+                <div class="col-md-4 text-center text-md-end">
+                    <span class="text-muted-custom small">Café • Sabor • Conexões</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS do Bootstrap para o Menu Sanduíche -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Customizado -->
+    <script src="script6.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grão & Prosa | Cardápio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex flex-column align-items-center" href="#">
+                <span class="logo-title">GRÃO & PROSA</span>
+                <span class="logo-subtitle">CAFETERIA ESPECIAL</span>
+            </a>
+
+            <!-- Menu Hambúrguer -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cardapio.html">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Nossa história</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Cardápio) -->
+    <section class="hero py-5">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-5 pe-lg-5">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <hr class="hero-line m-0">
+                        <span class="subtitle-text text-uppercase">NOSSO CARDÁPIO</span>
+                    </div>
+                    <h1 class="display-4 serif-font mb-4">Sabores que transformam seu dia.</h1>
+                    <p class="lead mb-5 text-muted-custom">
+                        Aqui você encontra cafés especiais, bebidas artesanais, pães, doces e muito mais. Tudo preparado
+                        com ingredientes selecionados e muito carinho.
+                    </p>
+                    <a href="#menu-tabs"
+                        class="btn btn-primary rounded-pill px-4 py-3 btn-green text-uppercase fw-semibold">
+                        VER TODAS AS OPÇÕES <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <img src="img/mix comidas.jpg"
+                        alt="Xícara de Cappuccino" class="img-fluid rounded-4 shadow-sm hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABS DE NAVEGAÇÃO DO CARDÁPIO -->
+    <section id="menu-tabs" class="pt-5 pb-3">
+        <div class="container">
+            <ul class="nav nav-custom-tabs gap-4 border-0" id="cardapioTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="cafes-tab" data-bs-toggle="tab" data-bs-target="#cafes"
+                        type="button" role="tab">Refeições</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO DO CARDÁPIO -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="tab-content" id="cardapioTabContent">
+
+                <!-- ABA: CAFÉS -->
+                <div class="tab-pane fade show active" id="cafes" role="tabpanel">
+                    <div class="mb-4 d-flex flex-column">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-flower1 fs-4 text-green"></i>
+                            <h2 class="serif-font m-0">Cafés</h2>
+                        </div>
+                        <p class="text-muted-custom">Do clássico ao autoral, para todos os momentos.</p>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Item 1 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="menu-card">
+                                <img src="img/expresso.webp" alt="Espresso">
+                                <h4 class="serif-font mt-3 mb-1 fs-5">Espresso</h4>
+                                <p class="text-muted-custom small mb-3">Intenso e encorpado, na medida certa.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="price">R$ 8,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="menu-card">
+                                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=400&q=80"
+                                    alt="Cappuccino">
+                                <h4 class="serif-font mt-3 mb-1 fs-5">Cappuccino</h4>
+                                <p class="text-muted-custom small mb-3">Café, leite vaporizado e toque de canela.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="price">R$ 14,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="menu-card">
+                                <img src="img/latte.jpg" alt="Latte">
+                                <h4 class="serif-font mt-3 mb-1 fs-5">Latte</h4>
+                                <p class="text-muted-custom small mb-3">Café com leite e cremosidade única.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="price">R$ 16,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="menu-card">
+                                <img src="img/affogato.jpg" alt="Macchiato">
+                                <h4 class="serif-font mt-3 mb-1 fs-5">Affogato</h4>
+                                <p class="text-muted-custom small mb-3">Espresso com um toque de leite.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="price">R$ 16,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="cafe.html" class="btn btn-outline-dark rounded-pill px-4 btn-nav">VER CARDÁPIO</a>
+                    </div>
+
+                    <!-- Seção Doces e Salgados -->
+                    <div class="mb-4 mt-5 d-flex flex-column">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-cake2 fs-4 text-green"></i>
+                            <h2 class="serif-font m-0">Salgados</h2>
+                        </div>
+                        <p class="text-muted-custom">Nossas combinações mais pedidas e perfeitas para acompanhar o seu
+                            café.</p>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Item 1 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="menu-card">
+                                <img src="img/cigarrete.jpg" alt="Bolo de Cenoura">
+                                <h4 class="serif-font mt-3 mb-1 fs-5">Cigarrete</h4>
+                                <p class="text-muted-custom small mb-3">Crocante e delicioso</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="price">R$ 8,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="menu-card">
+                                <img src="img/pao de queijo.jpg" alt="Pão de Queijo">
+                                <h4 class="serif-font mt-3 mb-1 fs-5">Pão de Queijo</h4>
+                                <p class="text-muted-custom small mb-3">Crocante por fora, macio por dentro.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="price">R$ 8,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="menu-card">
+                                <img src="img/croasaint.jpg" alt="Croissant">
+                                <h4 class="serif-font mt-3 mb-1 fs-5">Croissant</h4>
+                                <p class="text-muted-custom small mb-3">Massa folhada e muito sabor.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="price">R$ 10,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="menu-card">
+                                <img src="img/empada.jpg" alt="Torta de Frango">
+                                <h4 class="serif-font mt-3 mb-1 fs-5">Empada</h4>
+                                <p class="text-muted-custom small mb-3">Recheio cremoso e temperado.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="price">R$ 8,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="salgados.html" class="btn btn-outline-dark rounded-pill px-4 btn-nav">VER CARDÁPIO</a>
+                    </div>
+                </div>
+
+                <!-- Outras abas (vazias para demonstração) -->
+                <div class="tab-pane fade" id="bebidas" role="tabpanel">
+                    <p class="text-muted-custom mt-4">Conteúdo de Bebidas Especiais em breve...</p>
+                </div>
+                <div class="tab-pane fade" id="doces" role="tabpanel">
+                    <p class="text-muted-custom mt-4">Conteúdo de Doces em breve...</p>
+                </div>
+                <div class="tab-pane fade" id="salgados" role="tabpanel">
+                    <p class="text-muted-custom mt-4">Conteúdo de Salgados em breve...</p>
+                </div>
+            </div>
+
+            <!-- Seção Doces e Salgados -->
+            <div class="mb-4 mt-5 d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                    <i class="bi bi-cake2 fs-4 text-green"></i>
+                    <h2 class="serif-font m-0">Doces</h2>
+                </div>
+                <p class="text-muted-custom">Nossos doces mais pedidos para acompanhar o seu café.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Item 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-card">
+                        <img src="img/bolo de cenoura.jpg" alt="Bolo de Cenoura">
+                        <h4 class="serif-font mt-3 mb-1 fs-5">Bolo de Cenoura</h4>
+                        <p class="text-muted-custom small mb-3">Macio e delicioso</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="price">R$ 14,00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-card">
+                        <img src="img/brownie.jpg" alt="Pão de Queijo">
+                        <h4 class="serif-font mt-3 mb-1 fs-5">Brownie</h4>
+                        <p class="text-muted-custom small mb-3">Crocante por fora, macio por dentro.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="price">R$ 12,00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-card">
+                        <img src="img/palha.jpg" alt="Croissant">
+                        <h4 class="serif-font mt-3 mb-1 fs-5">Palha Italiana</h4>
+                        <p class="text-muted-custom small mb-3">Sabor profundo</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="price">R$ 10,00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-card">
+                        <img src="img/cookies.jpg" alt="cookies">
+                        <h4 class="serif-font mt-3 mb-1 fs-5">Cookie</h4>
+                        <p class="text-muted-custom small mb-3">Recheado e temperado.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="price">R$ 8,00</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="doces.html" class="btn btn-outline-dark rounded-pill px-4 btn-nav">VER CARDÁPIO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER FINAL -->
+    <section class="py-5">
+        <div class="container">
+            <div class="cta-banner rounded-4 p-5 text-white position-relative overflow-hidden">
+                <div class="position-relative z-1">
+                    <i class="bi bi-flower1 fs-3 mb-2 d-block text-white"></i>
+                    <h2 class="serif-font display-6 text-white mb-2">Mais que café,<br>é um momento.</h2>
+                    <p class="mb-4">Venha viver a experiência Grão & Prosa.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- FOOTER -->
+    <footer class="py-5 border-top border-secondary-subtle">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <!-- Logo Footer -->
+                <div class="col-md-4 text-center text-md-start">
+                    <a class="navbar-brand d-inline-flex flex-column align-items-center text-decoration-none" href="#">
+                        <span class="logo-title" style="font-size: 1.2rem;">GRÃO & PROSA</span>
+                        <span class="logo-subtitle" style="font-size: 0.45rem;">CAFETERIA ESPECIAL</span>
+                    </a>
+                </div>
+                <!-- Redes Sociais -->
+                <div class="col-md-4 text-center">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark fs-5 hover-green"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <!-- Slogan Footer -->
+                <div class="col-md-4 text-center text-md-end">
+                    <span class="text-muted-custom small">Café • Sabor • Conexões</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>

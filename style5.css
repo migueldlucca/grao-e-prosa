@@ -1,0 +1,220 @@
+/* Importando fontes para o layout baseado na imagem "Menu de Cafés Especiais Artisanais.png"[cite: 3] */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap');
+
+/* Paleta de Cores e Variáveis */
+:root {
+    --bg-main: #f4f1ea; /* Fundo creme/bege */
+    --text-dark-brown: #3e2723; /* Títulos em marrom escuro */
+    --text-body: #616161; /* Cor de texto padrão */
+    --btn-add-bg: #4a533c; /* Verde oliva escuro dos botões */
+    --line-color: #d7d1c5; /* Cor das divisórias */
+}
+
+body {
+    background-color: var(--bg-main);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark-brown);
+}
+
+.text-dark-brown {
+    color: var(--text-dark-brown) !important;
+}
+
+/* Navbar */
+.custom-navbar {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logo-icon {
+    color: var(--accent-green);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+.logo-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--text-dark);
+}
+.logo-subtitle {
+    font-size: 0.55rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #6a6058;
+}
+
+.navbar-nav .nav-link {
+    color: #6a6058;
+    font-size: 0.95rem;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--text-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: var(--accent-green);
+}
+
+.btn-nav {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-color: var(--text-dark);
+    color: var(--text-dark);
+}
+.btn-nav:hover {
+    background-color: var(--text-dark);
+    color: var(--bg-color);
+}
+
+
+/* Imagem Hero */
+.hero-img {
+    height: 300px;
+}
+
+/* Textos da Apresentação */
+.titulo-principal {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-dark-brown);
+}
+
+.subtitulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--text-body);
+}
+
+.texto-descritivo {
+    color: var(--text-body);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Fonte estilo manuscrito para a assinatura[cite: 3] */
+.assinatura {
+    font-family: 'Caveat', cursive;
+    font-size: 1.8rem;
+    color: var(--btn-add-bg);
+}
+
+/* Linha divisória vertical para desktop */
+@media (min-width: 992px) {
+    .border-start-lg {
+        border-left: 1px solid var(--line-color) !important;
+    }
+}
+
+/* Seção de Título de Produtos */
+.titulo-secao {
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    color: var(--text-dark-brown);
+}
+
+.linha-divisoria {
+    border-color: var(--line-color);
+    opacity: 0.8;
+}
+
+/* Estilo do Card de Produto[cite: 3] */
+.card-cafe {
+    padding-bottom: 1rem;
+}
+
+.img-produto {
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nome-produto {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.desc-produto {
+    font-size: 0.85rem;
+}
+
+.preco-produto {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-dark-brown);
+}
+
+/* Botões (+) */
+.btn-add {
+    background-color: var(--btn-add-bg);
+    color: #ffffff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #353d29;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Botão CTA Principal[cite: 3] */
+.btn-action {
+    background-color: var(--btn-add-bg);
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.btn-action:hover {
+    background-color: #353d29;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Decoração do Footer (Folhas) */
+.footer-cta-section {
+    overflow: hidden;
+}
+
+.leaf-decor {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 150px;
+    height: 150px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23d7d1c5" opacity="0.5" d="M50 10 C30 10, 10 30, 10 50 C10 70, 30 90, 50 90 C70 90, 90 70, 90 50 C90 30, 70 10, 50 10 Z"/></svg>'); /* Placeholder svg decorativo */
+    background-size: cover;
+    z-index: 1;
+    pointer-events: none;
+}
